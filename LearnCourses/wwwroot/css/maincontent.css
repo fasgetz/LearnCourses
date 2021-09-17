@@ -1,0 +1,243 @@
+a {
+    text-decoration: none
+}
+
+.phone-number {
+  font-size: 28px;
+  color: #039be5;
+  font-family: "Roboto Condensed",Verdana,Tahoma,sans-serif;
+  text-decoration: none;
+}
+
+
+/* Сворачивание меню */
+
+.fa-angle-double-down {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  font-size: 5rem;
+  transform: translateX(-50%);
+  animation-name: bounce;
+}
+
+.header {
+
+  color: white;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  transition: all .3s ease;
+}
+.header.out {
+  transform: translateY(-100%);
+}
+
+
+
+/* Кнопка */
+
+.button__subscribe a {
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.button__subscribe a:hover {
+  transform: scale(1.2);
+}
+
+
+/* стартовый */
+
+.start-block .container {
+  padding-top: 50px;
+}
+
+.start-block__image img {
+  width: 95%;
+  height: auto
+}
+
+.start-block {
+  padding-top: 100px;
+}
+
+.start-block__header {
+  font-weight: bold
+}
+
+.start-block__about {
+      color: #7b8894;
+
+      line-height: 1.8;
+      font-weight: 600;
+}
+
+
+/* Выгода-блок */
+
+.profit-block {
+  margin-top: 180px;
+}
+
+.header-text {
+  font-size: 2.5rem;
+  font-weight: 700
+}
+
+.item-header__number {
+  color: #45d67f;
+    font-size: 102px;
+    font-family: 'Montserrat',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+.item-header__text {
+
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+
+/* Меняйте любые курсы */
+
+.change-course-block {
+  margin-top: 100px;
+}
+
+.change-course-block__img img {
+  width: 75%;
+  height: auto
+}
+
+
+/* Предложения курсов блок */
+
+.offer-courses-block {
+  margin-top: 150px
+}
+
+.offer-courses-block .row {
+  margin-top: 100px;
+}
+
+.offer-courser-block__img img {
+  width: 65%;
+  height: auto
+}
+
+/* Как мы работаем - блок */
+
+.howjob-block {
+  margin-top: 150px;
+}
+
+
+.how-job-block__items {
+  margin-top: 150px;
+}
+
+.how-job__item__img img {
+    width: 100%;
+    height: auto;
+}
+
+.how-job__item__number {
+    font-size: 50px;
+    font-family: Montseratt, sans-serif
+}
+
+/* Остались вопросы - блок */
+
+.feedback-block {
+  margin-top: 150px;
+}
+
+/* Меню мобильное*/
+
+.menu-mobile {
+  background:url(../img/bg8-1.jpg) no-repeat 50% 50%;
+  color: white
+}
+
+.menu-mobile a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu-mobile a div:hover {
+background: rgba(0,0,0,.5);
+}
+
+@media (max-width: 991.98px){
+
+  .how-job-block__items, .feedback-block, .howjob-block {
+    margin-top: 50px;
+  }
+
+
+  .offer-courser-block__img img {
+    width: 75%
+  }
+
+
+  .button__subscribe .btn {
+    width: 100%
+  }
+
+  .offer-courses-block {
+    margin-top: 70px
+  }
+
+
+  .change-course-block__text {
+    text-align: center
+  }
+
+
+  .header-text {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+
+  .start-block {
+    padding-top: 50px;
+  }
+
+  .start-block__header {
+    text-align: center
+  }
+
+  .profit-block {
+    margin-top: 50px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .about-block h1, .heading {
+    font-size: 26px;
+  }
+
+  .about-block h3 {
+    font-size: 22px;
+  }
+
+  .inform-block h5 {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .inform-block li {
+    font-size: 16px;
+  }
+
+  .feedback-block button {
+    width: 75%!important
+  }
+
+}
