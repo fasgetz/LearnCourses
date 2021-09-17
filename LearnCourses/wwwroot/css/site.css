@@ -96,7 +96,7 @@ body {
 /* Майн контент */
 
 .main-content {
-  margin-top: 110px;
+  margin-top: 115px;
 }
 
 
@@ -104,13 +104,13 @@ body {
 
 @media (max-width: 991px) {
     .main-content {
-        margin-top: 65px !important;
+        margin-top: 110px !important;
     }
 }
 
 @media (max-width: 768px) {
     .main-content {
-        margin-top: 90px !important;
+        margin-top: 150px !important;
     }
 }
 
