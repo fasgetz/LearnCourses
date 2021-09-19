@@ -12,5 +12,10 @@ namespace LearnCourses.Controllers
         {
             return View();
         }
+        
+        public IActionResult Oferta()
+        {
+            return View();
+        }
     }
 }

@@ -39,11 +39,6 @@
             </a>
             <a href="#">
                 <div class="p-2">
-                    Договор
-                </div>
-            </a>
-            <a href="#">
-                <div class="p-2">
                     Личный кабинет
                 </div>
             </a>
@@ -66,9 +61,6 @@
                         </li>
                         <li class="nav-item p-1">
                             <a class="nav-link btn text-dark" asp-controller="Home" asp-action="Privacy">Контакты</a>
-                        </li>
-                        <li class="nav-item p-1">
-                            <a class="nav-link btn text-dark" href="#chat">Договор</a>
                         </li>
                         <li class="nav-item p-1">
                             <a class="nav-link btn text-dark" href="#">Войти</a>
@@ -104,9 +96,6 @@
                                 <a class="nav-link btn text-dark" asp-controller="Home" asp-action="Privacy">Контакты</a>
                             </li>
                             <li class="nav-item p-1">
-                                <a class="nav-link btn text-dark" href="#chat">Договор</a>
-                            </li>
-                            <li class="nav-item p-1">
                                 <a class="nav-link btn text-dark" href="#">Войти</a>
                             </li>
                         </ul>
@@ -135,7 +124,7 @@
             <div class="row mt-3">
                 <div class="col-md col-12">
                     <div><b>Компания</b></div>
-                    <div class="mt-3"><a href="#">Договор-оферта</a></div>
+                    <div class="mt-3"><a asp-controller="Oferta" asp-action="Oferta">Договор-оферта</a></div>
                     <div class="mt-3"><a href="#">Правила использования</a></div>
                     <div class="mt-3"><a asp-controller="Oferta" asp-action="PrivacyDataOferta">Политика конфиденциальности</a></div>
                 </div>
