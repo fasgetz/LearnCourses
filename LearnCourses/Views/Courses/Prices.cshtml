@@ -1,0 +1,232 @@
+﻿@{
+    ViewData["Title"] = "Тарифы";
+}
+
+
+@section Css {
+    <link href="~/css/coursesprice.css" rel="stylesheet" asp-append-version="true" />
+}
+
+
+<section class="tarif-block">
+    <div class="container">
+        <h1 class="tarif-block__header text-center pt-5">Тарифы</h1>
+        <div class="row mt-5">
+            <div class="col-lg-4 wow bounceInLeft">
+                <div class="tarif-item">
+                    <div class="tarif-item__header mt-3 text-center">
+                        <h3>Тариф Optima</h3>
+                    </div>
+                    <div class="tarif-item__description mt-3 text-center p-3">
+                        Попробуйте базовый тариф, который предоставляет возможность попробовать платформу в деле и убедиться, что она вам подходит
+                    </div>
+                    <div class="tarif-item__price mt-5 text-center">
+                        <div class="fw-bold">
+                            20 000 ₽
+                        </div>
+                        <div class="mt-1">
+                            За один месяц
+                        </div>
+                    </div>
+                    <div class="tarif-item__buy d-flex justify-content-center mt-3 mb-3 p-3">
+                        <div class="btn w-75 p-3">
+                            Перейти к оплате
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-lg-0 mt-5 wow bounceInUp">
+                <div class="tarif-item">
+                    <div class="tarif-item__header mt-3 text-center">
+                        <h3>Тариф Standart</h3>
+                    </div>
+                    <div class="tarif-item__description mt-3 text-center p-3">
+                        Стандарт включает в себя все удобные функции для вашего удобного обучения с ежедневным уведомлением о занятиях
+                    </div>
+                    <div class="tarif-item__price mt-5 text-center">
+                        <div class="fw-bold">
+                            30 000 ₽
+                        </div>
+                        <div class="mt-1">
+                            За один месяц
+                        </div>
+                    </div>
+                    <div class="tarif-item__buy d-flex justify-content-center mt-3 mb-3 p-3">
+                        <div class="btn w-75 p-3">
+                            Перейти к оплате
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-lg-0 mt-5 wow bounceInRight">
+                <div class="tarif-item">
+                    <div class="tarif-item__header mt-3 text-center">
+                        <h3>Тариф Extended</h3>
+                    </div>
+                    <div class="tarif-item__description mt-3 text-center p-3">
+                        Расширенный тариф включает в себя весь дополнительный функционал системы, а также помощь наставника в обучении
+                    </div>
+                    <div class="tarif-item__price mt-5 text-center">
+                        <div class="fw-bold">
+                            50 000 ₽
+                        </div>
+                        <div class="mt-1">
+                            За один месяц
+                        </div>
+                    </div>
+                    <div class="tarif-item__buy d-flex justify-content-center mt-3 mb-3 p-3">
+                        <div class="btn w-75 p-3">
+                            Перейти к оплате
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="comparasion-block mt-5">
+    <div class="container">
+        <div class="comparasion-block__header text-center">
+            Сравнение тарифов
+        </div>
+        <div class="row mt-5">
+            <div class="comparasion-block__table p-3">
+                <table class="table table-hover table-bordered mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col">Что входит в тариф</th>
+                            <th scope="col">Тариф Optima</th>
+                            <th scope="col">Тариф Standart</th>
+                            <th scope="col">Тариф Extended</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Любой тип подписки имеет неограниченный доступ ко всем курсам для обучения!">
+                                    Доступ ко всем курсам
+                                </div>
+                            </th>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Как в соцсетях, но без хаоса, что-то публиковать может только организатор обучения. Удобный способ делиться новостями компании">
+                                    Лента новостей
+                                </div>
+                            </th>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Как в соцсетях, но без хаоса, что-то публиковать может только организатор обучения. Удобный способ делиться новостями компании">
+                                    Форум
+                                </div>
+                            </th>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="24/7 помогаем разобраться с техническими трудностями на платформе: например, что-то не работает или непонятно, как работает">
+                                    Техподдержка учеников
+                                </div>
+                            </th>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Возможность создавать опросы для учащихся. В таком формате удобно собирать обратную связь по обучению и решать орг вопросы">
+                                    Опросы для учащихся
+                                </div>
+                            </th>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Работает по принципу гугл-календаря. Можно разнести по дням мероприятия, по клику на каждое открывается подробная информация">
+                                    Календарь обучения
+                                </div>
+                            </th>
+                            <td><img src="/img/money-bag.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Согласно своему графику, который вы можете выставить в личном кабинете, Вам будут приходить оповещения о том, что настал момент для обучения!">
+                                    Оповещения по учебе
+                                </div>
+                            </th>
+                            <td><img src="/img/money-bag.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Эти сервисы превращают массивы данных в наглядные отчеты с графиками. Сможете пользоваться ими, не покидая платформы">
+                                    Сервисы аналитики
+                                </div>
+                            </th>
+                            <td><img src="/img/money-bag.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Возможность закрепить за группой учащихся наставника. Он будет сопровождать обучение: проверять задания, следить за успехами">
+                                    Наставник
+                                </div>
+                            </th>
+                            <td><img src="/img/money-bag.png" alt=""></td>
+                            <td><img src="/img/money-bag.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div data-bs-toggle="tooltip" data-bs-placement="bottom" title="Возможность скрестить наши тех наработки с вашими, а также с другими сервисами — и оперативно собрать продукт под ваши задачи">
+                                    Доступ к API
+                                </div>
+                            </th>
+                            <td><img src="/img/money-bag.png" alt=""></td>
+                            <td><img src="/img/money-bag.png" alt=""></td>
+                            <td><img src="/img/checked.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts {
+    <script src="~/js/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        })
+        wow.init();
+    </script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+}

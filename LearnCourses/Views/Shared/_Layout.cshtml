@@ -22,9 +22,9 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body text-center">
-            <a href="#">
+            <a asp-controller="Courses" asp-action="Prices">
                 <div class="p-2 active">
-                    Прайс лист
+                    Тарифы
                 </div>
             </a>
             <a href="#">
@@ -54,7 +54,7 @@
                 <div class="navbar-collapse collapse d-md-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item p-1">
-                            <a class="nav-link btn text-dark active" href="#payment">Прайс лист</a>
+                            <a class="nav-link btn text-dark active" asp-controller="Courses" asp-action="Prices">Тарифы</a>
                         </li>
                         <li class="nav-item p-1">
                             <a class="nav-link btn text-dark active" href="#payment">Доступные курсы</a>
@@ -87,7 +87,7 @@
                     <div class="navbar-collapse collapse d-md-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item p-1">
-                                <a class="nav-link btn text-dark active" href="#payment">Прайс лист</a>
+                                <a class="nav-link btn text-dark active" asp-controller="Courses" asp-action="Prices">Тарифы</a>
                             </li>
                             <li class="nav-item p-1">
                                 <a class="nav-link btn text-dark active" href="#payment">Доступные курсы</a>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-md col-12 mt-3 mt-md-0">
                     <div><b>Продукт</b></div>
-                    <div class="mt-3"><a href="#">Прайс-лист</a></div>
+                    <div class="mt-3"><a asp-controller="Courses" asp-action="Prices">Тарифы</a></div>
                     <div class="mt-3"><a href="#">Доступные курсы</a></div>
                 </div>
                 <div class="col-md col-12 mt-3 mt-md-0">
@@ -167,17 +167,7 @@
             scrollPrev = scrolled;
         });
     </script>
-    <script src="~/js/wow.min.js"></script>
-    <script>
-        wow = new WOW({
-            boxClass: 'wow',
-            animateClass: 'animated',
-            offset: 0,
-            mobile: true,
-            live: true
-        })
-        wow.init();
-    </script>
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

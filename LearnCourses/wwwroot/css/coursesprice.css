@@ -1,0 +1,124 @@
+
+
+.tarif-block__header {
+      color: #212b35;
+      font-size: 2.2rem;
+      font-family: 'Montserrat',Arial,sans-serif;
+      line-height: 1.3;
+      font-weight: 700;
+}
+
+
+.tarif-item {
+    border-width: 10px;
+    border-radius: 50px;
+    background-color: #f7f8fa;
+    background-position: center center;
+    border-color: #ffffff;
+    border-style: solid;
+    box-shadow: 0px 0px 20px 0px rgb(33 43 53 / 10%);
+}
+
+.tarif-item__description {
+    color: #676e7c;
+    font-size: 17px;
+    font-family: 'Montserrat',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+}
+
+.tarif-item__price {
+  font-size: 30px
+}
+
+.tarif-item__buy .btn {
+  color: #212b35;
+    font-size: 16px;
+    font-family: 'Montserrat',Arial,sans-serif;
+    line-height: 1.3;
+    font-weight: 700;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #ade9d3;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.tarif-item__buy .btn:hover:nth-child(1) {
+  background-color: #85debe;
+}
+
+
+
+/* Блок сравнения тарифов */
+
+.comparasion-block__header {
+  color: #212b35;
+  font-size: 2.2rem;
+  font-family: 'Montserrat',Arial,sans-serif;
+  line-height: 1.3;
+  font-weight: 700;
+
+}
+
+
+.comparasion-block__table {
+  border-radius: 20px;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 20px 0px rgb(33 43 53 / 10%);
+}
+
+
+.comparasion-block__table tbody th {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+.comparasion-block__table thead th:not(:first-child) {
+  text-align: center;
+}
+
+.comparasion-block__table td {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.comparasion-block__table img {
+  height: 30px;
+  width: 30px;
+}
+
+.table-bordered {
+  border-left: 1px white;
+  border-top: 1px white;
+}
+
+.table-bordered tr th:last-child {
+  border-right: 1px white;
+}
+
+.table-bordered tr td:last-child {
+  border-right: 1px white;
+}
+
+.tooltip-inner {
+      padding: 10px;
+      color: #212b35;
+      font-size: 14px;
+      font-family: 'Montserrat',Arial,sans-serif;
+      line-height: 1.55;
+      font-weight: 400;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+}
+
+.tooltip .tooltip-arrow::before {
+  display: none
+}
