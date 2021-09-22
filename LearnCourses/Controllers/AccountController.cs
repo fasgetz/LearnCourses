@@ -1,5 +1,6 @@
 ﻿using LearnCourses.Models;
 using LearnCourses.Models.Identity;
+using LearnCourses.Models.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

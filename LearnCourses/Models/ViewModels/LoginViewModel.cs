@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LearnCourses.Models
+namespace LearnCourses.Models.ViewModels
 {
     /// <summary>
     /// Модель для авторизации пользователя

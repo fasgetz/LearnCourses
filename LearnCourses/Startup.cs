@@ -1,13 +1,16 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using LearnCourses.Models.Identity;
+using Microsoft.AspNetCore.Identity;
 
 namespace LearnCourses
 {
@@ -23,7 +26,23 @@ namespace LearnCourses
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation()
+                .AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
+
+            services.AddDbContext<ContextUsers>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("UsersIdentityConnection")));
+
+            services.AddIdentity<User, IdentityRole>(opts =>
+            {
+                opts.Password.RequireNonAlphanumeric = false;
+                opts.User.RequireUniqueEmail = true;    // уникальный email
+                opts.User.AllowedUserNameCharacters = ".@abcdefghijklmnopqrstuvwxyz"; // допустимые символы
+            })
+                .AddDefaultTokenProviders()
+                .AddEntityFrameworkStores<ContextUsers>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +63,7 @@ namespace LearnCourses
 
             app.UseRouting();
 
+            app.UseAuthentication();    // подключение аутентификации
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
