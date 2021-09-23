@@ -17,5 +17,10 @@ namespace LearnCourses.Controllers
         {
             return View();
         }
+        
+        public IActionResult Rules()
+        {
+            return View();
+        }
     }
 }
