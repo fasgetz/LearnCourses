@@ -1,0 +1,320 @@
+﻿@{
+    ViewData["Title"] = "Доступные курсы";
+}
+
+
+@section Css {
+    <link href="~/css/courses.css" rel="stylesheet" asp-append-version="true"/>
+} 
+
+
+<div class="container">
+    <section class="sales-block mt-3 row">
+        <div data-wow-duration="1s" class="wow bounceInUp row justify-content-around mt-5">
+            <div class="col-lg-4 col-12 order-lg-1 order-0">
+                <div class="offer-courser-block__img  d-flex justify-content-center align-items-center">
+                    <img src="~/img/itboy.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 mt-5 mt-lg-0 order-lg-0 order-1">
+                <div>
+                    <h5 class="offer-courses-block__header-courses"><b>Информационные технологии</b></h5>
+                    <div class="mt-3 text-muted">
+                        Информационные технологии сопровождают нас повсюду — в связи с этим профессиональные компетенции
+                        в этой области самые востребованные, высокооплачиваеммые, а также одни из самых актуальные на рынке труда.
+                    </div>
+                    <div class="button__subscribe mt-5">
+                        <div class="d-flex justify-content-lg-center">
+                            <a class="btn btn-warning p-3 wow pulse" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" asp-controller="Courses" asp-action="Prices">Оформить подписку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div data-wow-duration="2s" class="wow bounceInLeft col-lg-4 col-12">
+                <div class="item-course">
+                    <div class="item-course__img">
+                        <img src="~/img/courses/jscreatesite.jpeg" />
+                    </div>
+                    <div class="item-course_tags mt-3">
+                        <div class="item-course_tags__item-tag">
+                            Программирование
+                        </div>
+                        <div class="item-course_tags__item-tag">
+                            Веб-разработка
+                        </div>
+                    </div>
+                    <div class="item-course__header mt-3">
+                        Первые шаги в JavaScript:<br /> создаем сайт и приложение
+                    </div>
+                    <div class="item-course__about-course text-muted mt-3">
+                        Продолжительность курса: 18 занятий
+                    </div>
+                    <div class="mt-3 item-course__about">
+                        <a href="#">Подробнее о&nbsp;курсе&nbsp;→</a>
+                    </div>
+                </div>
+            </div>
+            <div data-wow-duration="2s" class="wow bounceInUp col-lg-4 col-12">
+                <div class="item-course">
+                    <div class="item-course__img">
+                        <img src="~/img/courses/pythonweb.jpg" />
+                    </div>
+                    <div class="item-course_tags mt-3">
+                        <div class="item-course_tags__item-tag">
+                            Программирование
+                        </div>
+                        <div class="item-course_tags__item-tag">
+                            Python
+                        </div>
+                    </div>
+                    <div class="item-course__header mt-3">
+                        Python для начинающих:<br /> создаем свой платформер
+                    </div>
+                    <div class="item-course__about-course text-muted mt-3">
+                        Продолжительность курса: 42 занятия
+                    </div>
+                    <div class="mt-3 item-course__about">
+                        <a href="#">Подробнее о&nbsp;курсе&nbsp;→</a>
+                    </div>
+                </div>
+            </div>
+            <div data-wow-duration="2s" class="wow bounceInRight col-lg-4 col-12">
+                <div class="item-course">
+                    <div class="item-course__img">
+                        <img src="~/img/courses/vuejs.png" />
+                    </div>
+                    <div class="item-course_tags mt-3">
+                        <div class="item-course_tags__item-tag">
+                            Программирование
+                        </div>
+                        <div class="item-course_tags__item-tag">
+                            VueJS
+                        </div>
+                    </div>
+                    <div class="item-course__header mt-3">
+                        Уроки VueJS для профессиональных Middle разработчиков
+                    </div>
+                    <div class="item-course__about-course text-muted mt-3">
+                        Продолжительность курса: 26 занятий
+                    </div>
+                    <div class="mt-3 item-course__about">
+                        <a href="#">Подробнее о&nbsp;курсе&nbsp;→</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sales-block mt-3 row">
+        <div data-wow-duration="1s" class="wow bounceInUp row justify-content-around mt-5">
+            <div class="col-lg-8 col-12 mt-5 mt-lg-0 order-lg-0 order-1">
+                <div>
+                    <h5 class="offer-courses-block__header-courses"><b>Продажи</b></h5>
+                    <div class="mt-3 text-muted">
+                        Освойте профессиональную компетенцию в сфере продаж: от составления коммерческих предложений,
+                        презентаций товаров и услуг, работы с возражениями, общению с ЛПР и холодными звонками.
+                    </div>
+                    <div class="button__subscribe mt-5">
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-warning p-3 wow pulse" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" asp-controller="Courses" asp-action="Prices">Оформить подписку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 order-lg-1 order-0">
+                <div class="offer-courser-block__img  d-flex justify-content-center align-items-center">
+                    <img src="~/img/business-man.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div data-wow-duration="2s" class="wow bounceInLeft col-lg-4 col-12">
+                <div class="item-course">
+                    <div class="item-course__img">
+                        <img src="~/img/courses/startsmm.jpg" />
+                    </div>
+                    <div class="item-course_tags mt-3">
+                        <div class="item-course_tags__item-tag">
+                            Маркетинг
+                        </div>
+                        <div class="item-course_tags__item-tag">
+                            SMM
+                        </div>
+                    </div>
+                    <div class="item-course__header mt-3">
+                        Старт в SMM:<br /> начало продаж
+                    </div>
+                    <div class="item-course__about-course text-muted mt-3">
+                        Продолжительность курса: 9 занятий
+                    </div>
+                    <div class="mt-3 item-course__about">
+                        <a href="#">Подробнее о&nbsp;курсе&nbsp;→</a>
+                    </div>
+                </div>
+            </div>
+            <div data-wow-duration="2s" class="wow bounceInUp col-lg-4 col-12">
+                <div class="item-course">
+                    <div class="item-course__img">
+                        <img src="~/img/courses/instamarket.png" />
+                    </div>
+                    <div class="item-course_tags mt-3">
+                        <div class="item-course_tags__item-tag">
+                            Маркетинг
+                        </div>
+                        <div class="item-course_tags__item-tag">
+                            Instagram
+                        </div>
+                    </div>
+                    <div class="item-course__header mt-3">
+                        Instagram как работать с контентом и блогерами
+                    </div>
+                    <div class="item-course__about-course text-muted mt-3">
+                        Продолжительность курса: 12 занятий
+                    </div>
+                    <div class="mt-3 item-course__about">
+                        <a href="#">Подробнее о&nbsp;курсе&nbsp;→</a>
+                    </div>
+                </div>
+            </div>
+            <div data-wow-duration="2s" class="wow bounceInRight col-lg-4 col-12">
+                <div class="item-course">
+                    <div class="item-course__img">
+                        <img src="~/img/courses/marketplace.jpg" />
+                    </div>
+                    <div class="item-course_tags mt-3">
+                        <div class="item-course_tags__item-tag">
+                            Маркетинг
+                        </div>
+                        <div class="item-course_tags__item-tag">
+                            Площадки
+                        </div>
+                    </div>
+                    <div class="item-course__header mt-3">
+                        Маркетплейсы: как выбрать площадку для размещения
+                    </div>
+                    <div class="item-course__about-course text-muted mt-3">
+                        Продолжительность курса: 14 занятий
+                    </div>
+                    <div class="mt-3 item-course__about">
+                        <a href="#">Подробнее о&nbsp;курсе&nbsp;→</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sales-block mt-3 row">
+        <div data-wow-duration="1s" class="wow bounceInUp row justify-content-around mt-5">
+            <div class="col-lg-4 col-12 order-lg-1 order-0">
+                <div class="offer-courser-block__img  d-flex justify-content-center align-items-center">
+                    <img src="~/img/boss.webp" alt="">
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 mt-5 mt-lg-0 order-lg-0 order-1">
+                <div>
+                    <h5 class="offer-courses-block__header-courses"><b>Менеджмент</b></h5>
+                    <div class="mt-3 text-muted">
+                        Управление персоналом важная составляющая часть любого бизнеса, ведь от правильно 
+                        сформированных бизнес-процессов, а также умения работы с людьми определяет эффективность в работе.
+                    </div>
+                    <div class="button__subscribe mt-5">
+                        <div class="d-flex justify-content-lg-center">
+                            <a class="btn btn-warning p-3 wow pulse" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" asp-controller="Courses" asp-action="Prices">Оформить подписку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div data-wow-duration="2s" class="wow bounceInLeft col-lg-4 col-12">
+                <div class="item-course">
+                    <div class="item-course__img">
+                        <img src="~/img/courses/prodaktmen.jpg" />
+                    </div>
+                    <div class="item-course_tags mt-3">
+                        <div class="item-course_tags__item-tag">
+                            Менеджмент
+                        </div>
+                        <div class="item-course_tags__item-tag">
+                            Бизнес
+                        </div>
+                    </div>
+                    <div class="item-course__header mt-3">
+                        Как стать продакт или проджект-менеджером
+                    </div>
+                    <div class="item-course__about-course text-muted mt-3">
+                        Продолжительность курса: 22 занятия
+                    </div>
+                    <div class="mt-3 item-course__about">
+                        <a href="#">Подробнее о&nbsp;курсе&nbsp;→</a>
+                    </div>
+                </div>
+            </div>
+            <div data-wow-duration="2s" class="wow bounceInUp col-lg-4 col-12">
+                <div class="item-course">
+                    <div class="item-course__img">
+                        <img src="~/img/courses/lider.jpg" />
+                    </div>
+                    <div class="item-course_tags mt-3">
+                        <div class="item-course_tags__item-tag">
+                            Менеджмент
+                        </div>
+                        <div class="item-course_tags__item-tag">
+                            Лидерство
+                        </div>
+                    </div>
+                    <div class="item-course__header mt-3">
+                        Лидерство, как важное качество в своей команде
+                    </div>
+                    <div class="item-course__about-course text-muted mt-3">
+                        Продолжительность курса: 6 занятий
+                    </div>
+                    <div class="mt-3 item-course__about">
+                        <a href="#">Подробнее о&nbsp;курсе&nbsp;→</a>
+                    </div>
+                </div>
+            </div>
+            <div data-wow-duration="2s" class="wow bounceInRight col-lg-4 col-12">
+                <div class="item-course">
+                    <div class="item-course__img">
+                        <img src="~/img/courses/managementpersonal.jpg" />
+                    </div>
+                    <div class="item-course_tags mt-3">
+                        <div class="item-course_tags__item-tag">
+                            Менеджмент
+                        </div>
+                        <div class="item-course_tags__item-tag">
+                            Основы
+                        </div>
+                    </div>
+                    <div class="item-course__header mt-3">
+                        Основы управление персоналом с нуля
+                    </div>
+                    <div class="item-course__about-course text-muted mt-3">
+                        Продолжительность курса: 15 занятий
+                    </div>
+                    <div class="mt-3 item-course__about">
+                        <a href="#">Подробнее о&nbsp;курсе&nbsp;→</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+@section Scripts {
+    <script src="~/js/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        })
+        wow.init();
+    </script>
+}

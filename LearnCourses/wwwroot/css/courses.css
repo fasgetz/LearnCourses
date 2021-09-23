@@ -1,0 +1,45 @@
+
+
+.row {
+    --bs-gutter-x: none;
+}
+
+
+.item-course {
+    padding: 15px;
+}
+
+.item-course__header {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.item-course__img img {
+
+    width: 100%;
+    height: auto;
+}
+
+.item-course_tags__item-tag {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 1.8;
+    border-radius: 2em;
+    padding: 0 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-clip: padding-box;
+    color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.1);
+}
+
+.item-course__about-course {
+    font-size: 0.9rem
+}
+
+.item-course__about {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.7;
+    text-decoration: none;
+}
